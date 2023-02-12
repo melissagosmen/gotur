@@ -3,4 +3,28 @@
   border: 0;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+:root {
+  --card_width: 250px;
+  --row_increment: 10px;
+  --card_border_radius: 16px;
+  --card_small: 26;
+  --card_medium: 33;
+  --card_large: 45;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
 }

@@ -1,3 +1,36 @@
 .main {
+  height: 100%;
+  margin-top: 80px;
+  overflow-y: auto;
+}
 
+.itemContainer {
+  width: 100vw;
+  overflow-y: auto;
+  max-height: calc(100vh - 80px);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card_width));
+  grid-auto-rows: var(--row_increment);
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  padding: 0;
+  margin: 15px 10px;
+  border-radius: var(--card_border_radius);
+  background-color: red;
+}
+
+.card_small {
+  grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+  grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+  grid-row-end: span var(--card_large);
 }
