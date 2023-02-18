@@ -10,9 +10,17 @@ function Create() {
     return (
         <>
             <Header />
-            <div className={styles.main}>
-
-            </div>
+            <main className={styles.main}>
+                <form className={styles.container} >
+                    <div className={styles.uploadWrapper}>
+                        <div className={styles.upload}>
+                        </div>
+                    </div>
+                    <div className={styles.about}>
+                        <input className={styles.titleInput} defaultValue="Başlığınızı ekleyin" {...register("example")} />
+                    </div>
+                </form>
+            </main>
         </>
     )
 }
