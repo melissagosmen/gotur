@@ -3,9 +3,27 @@ import Header from "../components/Header";
 import {useEffect, useState} from "react";
 import {getItems} from "../api/item";
 import {Item} from "../utils/types";
+import CardModal from "../components/CardModal";
 
 export function Home() {
     const [items, setItems] = useState<Array<Item>>([]);
+    const [modalActive, setModalActive] = useState<boolean>(false);
+    const [modalProps, setModalProps] = useState<Item>({
+            title: '',
+            description: '',
+            tag: [],
+            images: [],
+            publisher: '',
+            comments: [],
+            location: '',
+            created: ''
+        }
+    );
+
+    function adjustColumnNumber() {
+        const cardContainer = document.getElementById("cardContainer");
+        cardContainer!.style.columnCount = String(Math.floor(window.innerWidth / 250));
+    }
 
     useEffect(() => {
         const fetchData = async () => {
@@ -15,40 +33,34 @@ export function Home() {
 
         fetchData()
             .catch((err) => console.log(err));
+
+
+        adjustColumnNumber();
+        window.addEventListener('resize', adjustColumnNumber);
     }, [])
 
     return (
         <>
+            <CardModal modalProps={modalProps} active={modalActive} setActive={setModalActive}/>
             <Header/>
             <main className={styles.main}>
-                <div className={styles.itemContainer}>
-                    <div className={`${styles.card} ${styles.card_small}`}/>
-                    <div className={`${styles.card} ${styles.card_medium}`}/>
-                    <div className={`${styles.card} ${styles.card_small}`}/>
-                    <div className={`${styles.card} ${styles.card_medium}`}/>
-                    <div className={`${styles.card} ${styles.card_small}`}/>
-                    <div className={`${styles.card} ${styles.card_medium}`}/>
-                    <div className={`${styles.card} ${styles.card_large}`}/>
-                    <div className={`${styles.card} ${styles.card_large}`}/>
-                    <div className={`${styles.card} ${styles.card_small}`}/>
-                    <div className={`${styles.card} ${styles.card_medium}`}/>
-                    <div className={`${styles.card} ${styles.card_large}`}/>
-                    <div className={`${styles.card} ${styles.card_large}`}/>
-                    <div className={`${styles.card} ${styles.card_small}`}/>
-                    <div className={`${styles.card} ${styles.card_medium}`}/>
-                    <div className={`${styles.card} ${styles.card_small}`}/>
-                    <div className={`${styles.card} ${styles.card_medium}`}/>
-                    <div className={`${styles.card} ${styles.card_small}`}/>
-                    <div className={`${styles.card} ${styles.card_medium}`}/>
-                    <div className={`${styles.card} ${styles.card_large}`}/>
-                    <div className={`${styles.card} ${styles.card_large}`}/>
-                    <div className={`${styles.card} ${styles.card_small}`}/>
-                    <div className={`${styles.card} ${styles.card_medium}`}/>
-                    <div className={`${styles.card} ${styles.card_large}`}/>
-                    <div className={`${styles.card} ${styles.card_large}`}/>
+                <div id="cardContainer" className={styles.cardContainer}>
+                    {
+                        items.map((item, id) => {
+                            return (
+                                <div key={id} className={styles.cardWrapper}
+                                     onClick={() => {
+                                         setModalProps(item);
+                                         setModalActive(true);
+                                     }}
+                                >
+                                    <img className={styles.card} alt="card" src={item.images[0]}/>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </main>
         </>
     )
 }
-
