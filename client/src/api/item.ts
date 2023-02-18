@@ -3,16 +3,19 @@ import {Item} from "../utils/types";
 export const getItems = async () => {
     return [
         {
+            _id: '0',
             title: 'Kitchen Design',
-            description: 'If you are going to renovate your kitchen or planning to make a new one by professional, then this gig is perfect for you. I will convert your dream kitchen into a realistic 3d according to your selected material like walls color, floor tile, kitchen cabinets style, counter top and backsplash. This design will give you an idea of what your kitchen will look like in real.',
+            description: 'If you are going to renovate your kitchen or planning to make a new one by professional, then this gig is perfect for you. I will convert your dream kitchen into a realistic 3d according to your selected material like walls color, floor tile, kitchen cabinets style, counter top and backsplash. This design will give you an _idea of what your kitchen will look like in real.',
             tag: ['tag1', 'tag2'],
             images: ['https://i.pinimg.com/236x/57/7c/12/577c1242f160775929753601d119acc8.jpg'],
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -20,9 +23,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -30,9 +35,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -40,9 +47,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -50,9 +59,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -60,9 +71,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -70,9 +83,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -80,9 +95,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -90,9 +107,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -100,9 +119,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -110,9 +131,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -120,9 +143,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -130,9 +155,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -140,9 +167,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -150,9 +179,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -160,9 +191,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -170,9 +203,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -180,9 +215,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -190,9 +227,11 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
         {
+            _id: '0',
             title: 'string',
             description: 'string',
             tag: ['tag1', 'tag2'],
@@ -200,7 +239,8 @@ export const getItems = async () => {
             publisher: 'Kağan Hamzaçebi',
             comments: [],
             location: 'string',
-            created: 'string'
+            createdAt: 'string',
+            updatedAt: 'string'
         },
     ] as Array<Item>
 }

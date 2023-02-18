@@ -36,15 +36,15 @@ function CardModal(props: { modalProps: Item, active: boolean, setActive: Dispat
                             {modalProps.publisher}
                         </span>
                         <h2 className={styles.comments}>
-                            {modalProps.comments.length} Comments
+                            {modalProps.comments?.length} Comments
                         </h2>
                         {
-                            modalProps.comments.length === 0 ?
+                            modalProps.comments?.length === 0 ?
                                 <span>
                                     No comments yet! Add one to start the conversation.
                                 </span>
                                 :
-                                modalProps.comments.map((comment) => {
+                                modalProps.comments?.map((comment) => {
                                     return (
                                         <div>
                                             123

@@ -9,6 +9,7 @@ export function Home() {
     const [items, setItems] = useState<Array<Item>>([]);
     const [modalActive, setModalActive] = useState<boolean>(false);
     const [modalProps, setModalProps] = useState<Item>({
+            _id: '',
             title: '',
             description: '',
             tag: [],
@@ -16,7 +17,8 @@ export function Home() {
             publisher: '',
             comments: [],
             location: '',
-            created: ''
+            createdAt: '',
+            updatedAt: ''
         }
     );
 
